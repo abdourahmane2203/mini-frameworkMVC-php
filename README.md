@@ -9,20 +9,12 @@ Le projet est composé principalement de trois dossiers.
 
 Création d'un controller: 
 Tous les controllers seront crées dans le dossiers controlles/ et se termine toujours par Controller et etend la classe de base config\Controller .
-Ex:
-<?php
+Ex: Voir dans le dossier controller
 
-use config\Controller;
-
-class AccueilController extends Controller
-{
-    public function index() {
-            return $this->view->load("accueil/index");
-        }
-}
-
-
-NB: l'objet view dans la classe config\View qui est disponible dans la classe config\Controller donc dans les autres Controllers que nous allons créer.
+NB:
 La methode load() permet de charger une vue.
 
 Toutes les vues vont se trouver dans le dossiers views/ 
+Le dossier models contiendra nos rêquetes.
+
+Pour modifier les paramètre de connexion à la base de données allez dans la classe config\Model.php
