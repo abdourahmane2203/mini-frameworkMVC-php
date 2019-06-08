@@ -11,6 +11,7 @@ Création d'un controller:
 Tous les controllers seront crées dans le dossiers controlles/ et se termine toujours par Controller et etend la classe de base config\Controller .
 Ex:
 <?php
+
 use config\Controller;
 
 class AccueilController extends Controller
@@ -19,6 +20,7 @@ class AccueilController extends Controller
             return $this->view->load("accueil/index");
         }
 }
+
 
 NB: l'objet view dans la classe config\View qui est disponible dans la classe config\Controller donc dans les autres Controllers que nous allons créer.
 La methode load() permet de charger une vue.
